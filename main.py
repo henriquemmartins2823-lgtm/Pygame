@@ -21,9 +21,13 @@ while game:
 
     # ----- Gera saídas
     window.fill((200, 0, 0))  # Preenche com a cor branca
+    cor=(245,73,49)
+    posicao=[(0,600), (0,500), (900,600), (900,500)]
+    pygame.draw.polygon(window,cor,posicao)
 
     # ----- Atualiza estado do jogo
     pygame.display.update()  # Mostra o novo frame para o jogador
 
 # ===== Finalização =====
 pygame.quit()  #
+
